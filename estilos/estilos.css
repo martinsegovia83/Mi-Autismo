@@ -1350,7 +1350,7 @@ footer ul li a:hover {
 @media only screen and (max-width: 800px) {
   .mihistoria {
     height: 600px;
-    background-image: url(img/niño.jpg);
+    background-image: url(../img/niño.jpg);
     background-size: cover;
     background-position: left center;
   }
