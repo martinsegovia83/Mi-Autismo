@@ -170,6 +170,7 @@ header{
 				font-size: 25px;
 				color: black;
 				font-weight: bolder;
+				text-align: center;
 			}
 				button {
 					color: white;
@@ -326,6 +327,7 @@ footer{
 			a{
 				text-decoration: none;
 				display: inline-block;
+				margin: 5px;
 				transition: 0.5s;
 				&:hover {
 					transform: translateY(-10px);

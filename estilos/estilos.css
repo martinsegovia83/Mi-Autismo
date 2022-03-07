@@ -890,6 +890,7 @@ header {
   font-size: 25px;
   color: black;
   font-weight: bolder;
+  text-align: center;
 }
 
 .carousel-caption button {
@@ -1138,6 +1139,7 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   display: inline-block;
+  margin: 5px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
