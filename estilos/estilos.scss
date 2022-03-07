@@ -311,6 +311,7 @@ header{
 footer{
 	min-height: 100px;
 	width: 100%;
+	padding-top: 10px;
 	background: rgb(58,85,180);
 	background: linear-gradient(142deg, rgba(58,85,180,1) 12%, rgba(102,150,221,1) 21%, rgba(73,117,182,1) 36%, rgba(168,203,230,1) 49%, rgba(58,85,180,1) 62%, rgba(34,40,69,1) 71%, rgba(13,118,146,1) 84%);
 	display: flex;
@@ -322,7 +323,6 @@ footer{
 		flex-direction: row;
 		li{
 			list-style: none;
-			margin: 10px;
 			a{
 				text-decoration: none;
 				display: inline-block;
@@ -333,7 +333,10 @@ footer{
 			}
 		}
 	}
-
+		p{
+			font-size: 12px;
+			padding: 5px;
+		}
 }
 
 
@@ -437,7 +440,7 @@ ul {
 
 //**************************** INICIO INICIO.HTML****************************
 
-// //************************** INICIO DE INFORMACION.HTML********************
+//************************** INICIO DE INFORMACION.HTML********************
 
 	.container3 {
 		display: grid;
@@ -459,6 +462,7 @@ ul {
 // //************************** INICIO DE INFORMACION.HTML********************
 
 //***************************** INICIO DE CONTACTO.HTML*******************
+
 	.formulario{
 		height: 900px;
 		display: flex;
@@ -466,9 +470,9 @@ ul {
 		justify-content: center;
 		align-items: center;
 	}
+}
 
 //******************************** FIN DE CONTACTO.HTML**********************
-}
 
 @media only screen and (max-width: 800px) {
 
@@ -508,6 +512,7 @@ ul {
 
 
 //*************************** INICIO DE INICIO.HTML*****************************
+
 	.label {
 		display: block;
 		cursor: pointer;
@@ -576,8 +581,9 @@ ul {
 			font-size: 12px;
 		}
 	}
-//*************************** FIN DE INICIO.HTML*****************************
 }
+
+//*************************** FIN DE INICIO.HTML*****************************
 
 @media only screen and (max-width: 596px){
 
@@ -606,7 +612,10 @@ ul {
 }
 
 // ****************************FIN DE INDEX.HTML***************************
+
+
 //**************************INICIO INICIO.HTML******************************
+
 	.logo{
 		width: 200px;
 	}
@@ -618,17 +627,21 @@ ul {
 			margin: 0 auto;
 		}
 	}
+
 //**************************INICIO INICIO.HTML******************************
 
 //***************************INICIO AUTISMO.HTML**************************
+
     .autismo3{
         background-image: url(../img/autismo.jpg);
         background-position: center;
         background-size: contain;
     }
+
 //***************************FIN AUTISMO.HTML**************************
 
 //****************************INICIO VIDEOS.HTML************************
+
     .container {
         h1 {
             font-size: $h2;
@@ -637,6 +650,7 @@ ul {
                 font-size: $h3;
             }
     }
+
 //****************************FIN VIDEOS.HTML************************
 
 //************************** INICIO DE INFORMACION.HTML***************
@@ -651,6 +665,7 @@ ul {
 			padding: 3px;
 		}
 	}
+
 //************************** FIN DE INFORMACION.HTML***************
 
 //************************** INICIO DE CONTACTO.HTML*******************
@@ -685,17 +700,32 @@ ul {
 		font-size: 15px;
 	}
 	
-//************************** FIN DE CONTACTO.HTML*******************
 }
 
+//************************** FIN DE CONTACTO.HTML*******************
 
 @media only screen and (max-width: 434px){
 
 // ********************INICIO DE INICIO.HTML***************************
+
 	.foto {
 		grid-template-rows: 300px 450px 300px 560px 300px 520px;
 	}
+
 // ***********************FIN DE INICIO.HTML*****************************
+
+// ************************INICIO DE AUTISMO.HTML***********************
+
+	.autismo2{
+		.tipo{
+			float: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
 }
+
+// ************************FIN DE AUTISMO.HTML***************************
 
 // ---------------------------FIN DE @MEDIA------------------------------------

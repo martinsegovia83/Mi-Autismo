@@ -1103,6 +1103,7 @@ header {
 footer {
   min-height: 100px;
   width: 100%;
+  padding-top: 10px;
   background: #3a55b4;
   background: linear-gradient(142deg, #3a55b4 12%, #6696dd 21%, #4975b6 36%, #a8cbe6 49%, #3a55b4 62%, #222845 71%, #0d7692 84%);
   display: -webkit-box;
@@ -1132,7 +1133,6 @@ footer ul {
 
 footer ul li {
   list-style: none;
-  margin: 10px;
 }
 
 footer ul li a {
@@ -1145,6 +1145,11 @@ footer ul li a {
 footer ul li a:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
+}
+
+footer p {
+  font-size: 12px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1540,6 +1545,18 @@ footer ul li a:hover {
   .foto {
     -ms-grid-rows: 300px 450px 300px 560px 300px 520px;
         grid-template-rows: 300px 450px 300px 560px 300px 520px;
+  }
+  .autismo2 .tipo {
+    float: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
