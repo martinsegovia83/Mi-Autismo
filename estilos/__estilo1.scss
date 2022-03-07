@@ -1,0 +1,549 @@
+
+//--------------- INICIO ESTILOS DE HISTORIA.HTML----------------------
+
+// *******************AGREGANDO @INCLUDE (MIXINS)******************
+
+.libro{
+	background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/libro.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.historia0{
+    height: 350px;
+    width: 100%;
+    background-image: url(../img/historia.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .historia {
+        @include titulos (center, $color1, $h2, uppercase);
+        padding: 150px 30px;
+    }
+}
+
+p {
+    text-align: left;
+    padding: 15px;
+	color: white;
+}
+
+.row {
+	border: $color1 double 4px;
+	border-radius: 7px;
+	margin: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 7px;
+}
+.doctor {
+	p {
+		text-align: left;
+	}
+	ol {
+		padding: 30px;
+		color: white;
+	}
+}
+.imagen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+//------------------- FIN ESTILOS DE HISTORIA.HTML--------------------------
+
+//-------------------- INICIO ESTILOS DE AUTISMO.HTML----------------------
+
+//**************** AGREGANDO MAPAS ***************************
+
+.espectro{
+	background-image: url(../img/puente.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+@each $grado, $tipos in $grados {
+    .grado--#{$grado} {
+        padding: 5px 20px;
+        margin: 0;
+        color: $tipos;
+    }
+}
+
+// *******************AGREGANDO @INCLUDE (MIXINS)*************************
+.autismo{
+    h1{
+        @include titulos (center, $color1, $h1, capitalize);
+		text-shadow: 5px 5px 5px #206568;
+    }
+        h2{
+            text-align: center;
+            font-size: $h2;
+        }
+            .inicio{
+                @include titulos (center, $color1, $h2, capitalize);
+                text-shadow: 5px 5px 5px #206568;
+                padding: 20px;
+            }
+}
+
+.autismo1{
+    border-bottom: 3px double $color1;
+    p{
+		color: white;
+        text-align: left;
+        padding: 3px 20px;
+        margin: 0;
+    }
+        ol{
+            padding-left: 50px;
+        }
+            li{
+                padding: 2px;
+            }
+                h3{
+                    font-size: $h3;
+                    text-align: center;
+                }
+                    img{
+                        float: right;
+                        margin: 10px;
+                    }
+}
+
+.autismo2{
+    border-bottom: 7px double $color1;
+    p{
+		color: white;
+        text-align: left;
+        padding: 3px 20px;
+        margin: 0;
+    }
+        ol{
+            padding-left: 50px;
+            color: $color1;
+        }
+            li{
+                padding: 2px;
+            }
+                    img{
+                        float: right;
+                        margin: 10px;
+                    }
+}
+
+.autismo3{
+	padding: 10px;
+    background-image: url(../img/autismo.jpg);
+    background-position: center;
+    background-size: cover;
+	p{
+		color: $color4;
+	}
+}
+
+//*********************** COLOCANDO EL @EXTEND *****************************
+
+.item1{
+    text-align: center;
+    border: cadetblue double 5px;
+    border-radius: 7px;
+    margin: 5px 50px;
+    &:hover {
+        background-color: $color1;
+        font-weight: bold;
+		transform: scale(1.05);
+		transition: all 2s;
+		filter: grayscale(100%);
+	}
+}
+.item2{
+    @extend .item1;
+}
+.item3{
+    @extend .item1;
+}
+.item4{
+    @extend .item1;
+}
+.item5{
+    @extend .item1;
+}
+.item6{
+    @extend .item1;
+}
+.item7{
+    @extend .item1;
+}
+.item8{
+    @extend .item1;
+}
+.item9{
+    @extend .item1;
+}
+.item10{
+    @extend .item1;
+}
+.item2{
+    @extend .item1;
+}
+.item2{
+    @extend .item1;
+}
+
+//------------------------------ FIN ESTILOS DE AUTISMO.HTML--------------------------
+
+//------------------------------ INICIO ESTILOS VIDEOS.HTML-----------------------
+
+// *******************AGREGANDO @INCLUDE (MIXINS)*********************************
+
+.recomendacion{
+	background-image: url(../img/Series.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.container {
+	h1 {
+		@include titulos (left, $color1, $h1, capitalize);
+		text-shadow: 5px 5px 5px #206568;
+	}
+        P{
+            font-size: $h2;
+            color: $color1;
+        }
+}
+.videos1 {
+	margin: 20px;
+	padding: 20px;
+}
+.caja1 {
+	width: 100%;
+	max-width: 620px;
+	margin: auto;
+	padding: 5px;
+}
+.video1 {
+	height: 0px;
+	width: 100%;
+	max-width: 620px;
+	padding-bottom: 56.25%;
+	position: relative;
+	iframe {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+	}
+}
+.caja2 {
+	width: 100%;
+	max-width: 620px;
+	margin: auto;
+	padding: 5px;
+}
+.video2 {
+	height: 0px;
+	width: 100%;
+	max-width: 620px;
+	padding-bottom: 56.25%;
+	position: relative;
+	iframe {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+	}
+}
+.caja3 {
+	width: 100%;
+	max-width: 620px;
+	margin: auto;
+	padding: 5px;
+}
+.video3 {
+	height: 0px;
+	width: 100%;
+	max-width: 620px;
+	padding-bottom: 56.25%;
+	position: relative;
+	iframe {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+	}
+}
+.videos2 {
+	margin: 20px;
+	padding: 20px;
+}
+.caja4 {
+	width: 100%;
+	max-width: 620px;
+	margin: auto;
+	padding: 5px;
+}
+.serie1 {
+	height: 0px;
+	width: 100%;
+	max-width: 620px;
+	padding-bottom: 56.25%;
+	position: relative;
+	iframe {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+	}
+}
+.caja5 {
+	width: 100%;
+	max-width: 620px;
+	margin: auto;
+	padding: 5px;
+}
+.serie2 {
+	height: 0px;
+	width: 100%;
+	max-width: 620px;
+	padding-bottom: 56.25%;
+	position: relative;
+	iframe {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+	}
+}
+.caja6 {
+	width: 100%;
+	max-width: 620px;
+	margin: auto;
+	padding: 5px;
+}
+.serie3 {
+	height: 0px;
+	width: 100%;
+	max-width: 620px;
+	padding-bottom: 56.25%;
+	position: relative;
+	iframe {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+	}
+}
+.caja7 {
+	width: 100%;
+	max-width: 620px;
+	margin: auto;
+	padding: 5px;
+}
+.serie4 {
+	height: 0px;
+	width: 100%;
+	max-width: 620px;
+	padding-bottom: 56.25%;
+	position: relative;
+	iframe {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		left: 0px;
+	}
+}
+
+//------------------------------ FIN ESTILOS VIDEOS.HTML-----------------------
+
+//---------------------------- INICIO ESTILOS INFORMACION.HTML-------------------------
+
+.fundacion{
+	background-image: url(../img/autism.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.info {
+	text-align: center;
+	font-size: $h1;
+	color: $color3;
+	text-shadow: 2px 2px 2px rgb(54, 110, 114);
+	text-transform: uppercase;
+	padding: 5px;
+}
+
+.dropdown-menu {
+	li {
+		&:hover {
+			background-color: cadetblue;
+			color: beige;
+		}
+	}
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 35rem);
+    gap: 10px 10px;
+    }
+    
+    .dato1 { grid-area: 1 / 1 / 2 / 2; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: $color3 solid 5px;
+        margin: 25px;
+        border-radius: 15px;
+    }
+    .info1 { grid-area: 1 / 2 / 2 / 3; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: $color3 solid 5px;
+        margin: 25px;
+        border-radius: 15px;
+    }
+    .info2 { grid-area: 2 / 1 / 3 / 2; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: $color3 solid 5px;
+        margin: 25px;
+        border-radius: 15px;
+    }
+    .dato2 { grid-area: 2 / 2 / 3 / 3; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: $color3 solid 5px;
+        margin: 25px;
+        border-radius: 15px;
+    }
+    .dato3 { grid-area: 3 / 1 / 4 / 2; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: $color3 solid 5px;
+        margin: 25px;
+        border-radius: 15px;
+    }
+    .info3 { grid-area: 3 / 2 / 4 / 3; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: $color3 solid 5px;
+        margin: 25px;
+        border-radius: 15px;
+    }
+
+//------------------------------ FIN ESTILOS INFORMACION.HTML--------------------------
+
+//------------------------------- INICIO ESTILOS CONTACTO.HTML--------------------------
+.formulario {
+	width: 100%;
+	height: 700px;
+	width: 100%;
+	height: 700px;
+	background-image: url(../img/fondo.jpg);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.texto-final {
+	p {
+		font-size: 20px;
+		text-align: center;
+		color: white;
+		padding: 20PX;
+	}
+}
+form {
+	width: 450px;
+	margin: auto;
+	background: rgba(0,0,0,0.4);
+	padding: 10px 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.mail {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border: cadetblue solid 3px;
+	border-radius: 4px;
+	margin: 20px;
+}
+
+// *******************AGREGANDO @INCLUDE (MIXINS)*****************
+
+.contacto1 {
+	margin: 20px 60px;
+	h1 {
+		@include titulos (center, $color4, $h1, uppercase);
+		margin-bottom: 20px;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+	input {
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 10px;
+		box-sizing: border-box;
+		font-size: 17px;
+	}
+	textarea {
+		min-height: 100px;
+		max-height: 200px;
+		max-width: 100%;
+	}
+}
+textarea {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 17px;
+}
+#boton {
+	color: white;
+	background-color: cadetblue;
+	border-radius: 7px;
+	border: none;
+	&:hover {
+		color: beige;
+		font-weight: bold;
+		background-color: rgb(52, 112, 114);
+		cursor: pointer;
+	}
+}
+
+//------------------------------- FIN ESTILOS CONTACTO.HTML--------------------------
+
+
+
+
+
+
+
+

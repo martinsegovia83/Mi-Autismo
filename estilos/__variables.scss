@@ -1,0 +1,35 @@
+
+//******************** VARIABLES
+
+$color1:#f5f5dc;
+$color2:#3a55b4;
+$color3:#6696dd;
+$color4:black;
+
+$font:'Poppins', sans-serif;
+
+$h1: 35px;
+$h2: 25px;
+$h3: 20px;
+$h4: 16px;
+
+//********************* MAPAS
+
+$grados: (
+    grado1: #f8f82f, 
+    grado2: #008000,
+    grado3: #55aacc,
+    grado4: #ff0000,
+    grado5: #0000ff,
+);
+
+
+//******************* MIXINS
+
+@mixin titulos ($align, $colores, $size, $transform) {
+    text-align: $align;
+    color: $colores;
+    font-size: $size;
+    text-transform: $transform;
+}
+
