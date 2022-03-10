@@ -73,7 +73,8 @@ p {
 }
 
 .espectro {
-  background-image: url(../img/puente.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75)), to(rgba(5, 7, 12, 0.75))), url(../img/puente.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/puente.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
