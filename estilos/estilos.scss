@@ -3,8 +3,8 @@
 
 //----------------------- INICIO DE IMPORTANDO ESTILOS Y VARIABLES-------------------------------
 
-@import "variables";
-@import "estilo1";
+@import "__variables";
+@import "__estilo1";
 
 //------------------------ FIN DE IMPORTANDO ESTILOS Y VARIABLES----------------------------------
 
@@ -232,7 +232,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	padding: 5px;
-	gap: 10px;
+	gap: 5px;
 	p{
 		color: $color1;
 	}
@@ -243,7 +243,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	padding: 5px;
-	gap: 10px;
+	gap: 5px;
 	p{
 		color: $color1;
 	}
@@ -282,7 +282,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	padding: 5px;
-	gap: 10px;
+	gap: 5px;
 	p{
 		color: $color1;
 	}
@@ -388,8 +388,8 @@ ul {
 //**************************** INICIO INICIO.HTML****************************
 
 	.menu-menu {
-		gap: 5px;
-		margin: 5px;
+		gap: 1px;
+		margin: 2px;
 		padding: 5px;
 	}
 

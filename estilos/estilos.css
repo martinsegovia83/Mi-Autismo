@@ -983,7 +983,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px;
-  gap: 10px;
+  gap: 5px;
 }
 
 .text1 p {
@@ -1010,7 +1010,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px;
-  gap: 10px;
+  gap: 5px;
 }
 
 .text2 p {
@@ -1077,7 +1077,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 5px;
-  gap: 10px;
+  gap: 5px;
 }
 
 .text3 p {
@@ -1193,8 +1193,8 @@ footer p {
     letter-spacing: 1px;
   }
   .menu-menu {
-    gap: 5px;
-    margin: 5px;
+    gap: 1px;
+    margin: 2px;
     padding: 5px;
   }
   .menu-item {
